@@ -1,0 +1,42 @@
+@mixin header {
+  text-align: center;
+  background-color: #fafafa;
+  font-family: Roboto;
+}
+.header {
+  @include header;
+}
+
+@mixin card-container {
+  height: 600px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.card-container {
+  @include card-container;
+}
+
+@mixin side-inner {
+  font-family: Roboto;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  height: 250px;
+  background-color: ©;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.side {
+  @include side-inner;
+  padding: 10px 0 10px 0;
+}
+
+.inner-box {
+  @include side-inner;
+  padding: 0 10px 10px 10px;
+}
